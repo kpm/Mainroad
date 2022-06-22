@@ -9,6 +9,13 @@
 			{{ with partial "post_meta.html" . -}}
 			<div class="post__meta meta">{{ . }}</div>
 			{{- end }}
+			<!-- Created Date -->
+			{{- $pubdate := .PublishDate.Format "2006-01-02" }}
+			Created: 
+			<time datetime="{{ .PublishDate }}" title="{{ .PublishDate }}">
+			    {{ $pubdate }}
+			</time>
+
 		</header>
 		{{- if .Params.thumbnail }}
 		<figure class="post__thumbnail">
