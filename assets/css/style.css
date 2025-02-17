@@ -1,4 +1,4 @@
-{{- $highlightColor := .Site.Params.highlightColor | default "#e22d30" -}}
+{{- $highlightColor := .Site.Params.highlightColor | default "#20B2AA" -}}
 
 *,
 *::before,
@@ -50,7 +50,7 @@ body {
 	font-size: .875rem;
 	line-height: 1.6;
 	word-wrap: break-word;
-	background: #f7f7f7;
+	background: #f0f0f0;
 	-webkit-font-smoothing: antialiased;
 }
 
